@@ -1,1 +1,1 @@
-# GS_wave_maket
+# GS_wave_maker
