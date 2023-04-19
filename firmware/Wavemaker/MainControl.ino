@@ -1,3 +1,7 @@
+
+
+/*
+ 
 int ct=0;
 int pt=0;
 
@@ -32,6 +36,14 @@ void motorControl(){
   }
 }
 
+
+void reportPosition() 
+  {
+    Serial.print("POSITION:");
+    Serial.print(stepper.currentPosition());
+    Serial.println("#");
+  }
+
 void MSmodeControl(){
   
   if(S[0] && stepmode<4 && !rm) stepmode++;
@@ -47,9 +59,10 @@ void MSmodeControl(){
       stepper.setCurrentPosition(_resetPosition); // reset position setting
       _resetPosition = 0;
       
-      setMicrostep(); //microstepping setting
+      //setMicrostep(); //microstepping setting
     }
 
   else if(S[3] && !rm) subm--;
   else if(S[3] && rm) rm--;
 }
+*/

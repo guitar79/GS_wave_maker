@@ -1,8 +1,9 @@
+/*
 // JS's pcb
 //#define PCB_1
 
 //Kevin's PCB
-#define PCB_2 
+#define PCB_1 
 
 //스위치 핀 번호
 #ifdef PCB_1 
@@ -70,3 +71,5 @@ void buttonRead(){
     }
   }
 }
+
+*/

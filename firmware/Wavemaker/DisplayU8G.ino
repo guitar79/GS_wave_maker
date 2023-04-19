@@ -1,15 +1,9 @@
 //https://github.com/olikraus/u8glib/wiki/fontsize
 //https://github.com/olikraus/u8glib/wiki/userreference#setprintpos
 
-void U8G_start()
-  {
-    u8g.setFont(u8g_font_5x8);
-    u8g.setColorIndex(1);
-    u8g.setFontPosTop();
-  //draw();
-  }
 
 
+/*
 void U8G_test()
   {
     u8g.firstPage();   
@@ -31,15 +25,15 @@ void U8G_draw()
       u8g.setFontPosBottom();
       
       u8g.drawStr(-1,26,"TEMP : "); 
-        u8g.setPrintPos(34,26);
-        u8g.print(Temperature);
-        u8g.drawStr(55,26,"\xb0");
-        u8g.drawStr(60,26,"C");
+      u8g.setPrintPos(34,26);
+      //u8g.print(Temperature);
+      u8g.drawStr(55,26,"\xb0");
+      u8g.drawStr(60,26,"C");
         
       u8g.drawStr(70,26,"HUM : "); 
-        u8g.setPrintPos(100,26);
-        u8g.print(Humidity);
-        u8g.drawStr(120,26,"%");
+      u8g.setPrintPos(100,26);
+      //  u8g.print(Humidity);
+      u8g.drawStr(120,26,"%");
 
         if(subm!=2 || menu!=1) {
       u8g.drawStr(0,35,"POSITION : "); 
@@ -109,3 +103,5 @@ void U8G_draw()
         
     } while( u8g.nextPage() ); 
 }
+
+*/

@@ -1,3 +1,5 @@
+/*
+
 // https://roboticsbackend.com/arduino-write-string-in-eeprom/
 
 void startEEPROMsetup() {
@@ -49,3 +51,5 @@ int readStringFromEEPROM(int addrOffset, String *strToRead)
     *strToRead = String(data);
     return addrOffset + 1 + newStrLen;
   }
+
+*/
