@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "teensy:avr:teensy31:usb=serial,speed=96,opt=o2std,keys=en-us",
+  "hardwareFolders": "C:\\Users\\Kiehyun\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\Kiehyun\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "C:\\Users\\Kiehyun\\Desktop\\KBox\\Github\\GS_wave_maker\\firmware\\WaveMaker"
+}

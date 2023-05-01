@@ -3,49 +3,23 @@
  * Generating Sine Wave
  */
 
-
-//motor DRV config
-#define onDRV
-//#define extDRV
-
-//
-#ifdef onDRV 
-  
-#endif
-#ifdef extDRV
-  
-#endif
-
-
-
+/*
 #include "Arduino.h"
 #include "TeensyStep.h"
 
-// firmware info, these are returned by the ":GV?#" commands
-#define FirmwareDate          __DATE__
-#define FirmwareVersionMajor  0
-#define FirmwareVersionMinor  1      // minor version 0 to 99
-#define FirmwareVersionPatch  "p"     // for example major.minor patch: 1.3c
-#define FirmwareVersionConfig 3       // internal, for tracking configuration file changes
-#define FirmwareName          "Wave-maker"
-#define FirmwareTime          __TIME__
+// Define pin connections
+const int stepPin = 16;
+const int dirPin  = 15;
+const int slpPin  = 17;
+const int rstPin  = 7;
+const int faultPin = 14;
 
-
-#include "Config.h"
-
-// Define Motor driver
-// #define stepPin = 16
-// #define dirPin  = 15
-// #define slpPin  = 17
-// #define rstPin  = 7
-// #define faultPin = 14
-
-// // Define button pin 
-// #define rightPin = 9
-// #define downPin = 10
-// #define upPin = 12
-// #define leftPin = 11
-// #define led = 13
+//for the controller
+const int rightPin = 9;
+const int downPin = 10;
+const int upPin = 12;
+const int leftPin = 11;
+const int led = 13;
 
 const int lmt1Pin = 21;
 const int lmt2Pin = 22;
@@ -92,13 +66,11 @@ void setup(){
     pinMode(leftPin,INPUT_PULLUP);
 
     // for DRV8825
-    #ifdef onDRV 
-      pinMode(slpPin, OUTPUT);
-      pinMode(rstPin, OUTPUT);
-      digitalWrite(slpPin, HIGH);
-      digitalWrite(rstPin, HIGH);
-    #endif
-    
+
+    pinMode(slpPin, OUTPUT);
+    pinMode(rstPin, OUTPUT);
+   digitalWrite(slpPin, HIGH);
+    digitalWrite(rstPin, HIGH);
 
 //    pinMode(limitPositivePin, INPUT);
 //    pinMode(limitNegatevePin, INPUT);
@@ -182,3 +154,4 @@ void loop(){
         if(millis()<printTimeLimit) Serial.printf("%lf %lf\n", (double)millis()/1000, (double)motor.getPosition()/400);
     }
 }
+*/
